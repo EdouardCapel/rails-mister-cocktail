@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-xs-8 col-xs-offset-2">
+
+    <div class="text-center">
+      <h2>All Ingredients List</h2>
+    </div>
+
+    <div class="container">
+      <% @cocktail.doses.each do |dose| %>
+        <div class="card">
+          <h3><%= dose.description %></h3>
+          <h3><%= dose.ingredients.name %></h3>
+        </div>
+      <% end %>
+
+      <div class="card">
+        <%= link_to "Back", cocktails_path, :class => "link" %>
+      </div>
+    </div>
+
+  </div>
+</div>

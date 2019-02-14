@@ -13,3 +13,52 @@
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";
+
+body{
+  color: rgb(50,50,50);
+  background: rgb(245,245,245);
+}
+
+h1{
+  font-size: 24px;
+  font-family: 'Nunito', sans-serif;
+}
+
+h2{
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+
+h3{
+  margin: 0;
+  line-height: 22px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a{
+  margin: 0px;
+  padding: 0px;
+  color: rgb(60,60,60);
+  text-decoration: none;
+}
+a:hover{
+  text-decoration:none;
+}
+
+ul{
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+p{
+  margin: 0px;
+  padding: 0px;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+
+@import "cocktails";
+@import "doses";
