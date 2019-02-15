@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  root to: 'articles#index'
   resources :doses, only: [ :destroy]
   resources :cocktails, only: [ :index, :new, :create, :show, :edit] do
     resources :doses, only: [ :new, :create]
